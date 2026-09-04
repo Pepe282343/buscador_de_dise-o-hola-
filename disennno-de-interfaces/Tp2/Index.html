@@ -1,0 +1,38 @@
+<!--Ejercicio 2: Lista Dinámica de Tareas
+
+Objetivo:
+Practicar la manipulación del DOM creando, eliminando y modificando elementos.
+Introducir la creación y eliminación de nodos (createElement, innerHTML, appendChild, remove).
+
+Instrucciones:
+Crea una página con un input de texto y un botón que diga “Agregar tarea”.
+Atributo del input PLACEHOLDER=”Ingrese su tarea”
+Al hacer clic en el botón, la tarea escrita en el input debe agregarse a una lista (<ul>).
+Cada tarea debe incluir un botón de “Eliminar” que la elimine de la lista al hacer clic.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+</head>
+<body>
+
+    <header>
+        <h1>Lista Dinámica de Tareas</h1>
+    </header>
+    <main>
+        <input type="text" id="tareaInput" placeholder="Ingrese su tarea">
+        <button onclick="agregarTarea()">Agregar tarea</button>
+        <ul id="listaTareas"></ul>
+    </main>
+    <footer>
+        <p>Ejercicio 2: Lista Dinámica de Tareas</p>
+    </footer>
+
+ 
+        
+    <script src="app.js"></script>
+</body>
+</html>

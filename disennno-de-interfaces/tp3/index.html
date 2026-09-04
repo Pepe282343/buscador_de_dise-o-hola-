@@ -1,0 +1,122 @@
+<!--Objetivo:
+Desarrollar una función de búsqueda en JavaScript que permita a los usuarios filtrar dinámicamente la opciones.
+Instrucciones:
+Utiliza el código HTML y CSS realizado anteriormente para la página web. Asegúrate de que el campo de búsqueda tenga un identificador único, por ejemplo id="search-input"
+
+Agrega un archivo JavaScript a tu proyecto, por ejemplo script.js, y enlázalo correctamente en tu archivo HTML.
+En tu archivo JavaScript, crea una función llamada "filtroBusqueda" que se activará cada vez que el usuario escriba en el campo de búsqueda.
+Esta función debe capturar el texto ingresado y filtrar los botones de animales mostrando solo aquellos que coincidan con el texto ingresado.
+Funcionalidad de Filtrado:
+A cada botón de alguna sección, Animales, añádele un data-attribute que contenga el nombre de la localidad, por ejemplo: <button data-raza="Perro">Perro</button>.
+La función 
+
+"filtroAnimalRaza"  debe verificar si el data-animal de cada botón incluye la cadena de texto ingresada en el campo de búsqueda.
+Oculta los botones que no coincidan con la búsqueda y muestra los que sí.
+Interacción del Usuario:
+Asegúrate de que el campo de búsqueda responda a eventos del tipo keyup o input para que la búsqueda se realice en tiempo real mientras el usuario escribe.
+Considera agregar una funcionalidad para que, si el campo de búsqueda está vacío, todos los botones se muestren de nuevo.
+Prueba la funcionalidad en varios navegadores para asegurarte de que el comportamiento es consistente.
+Verifica que la interfaz sea intuitiva y que la búsqueda funcione de manera fluida y sin errores.
+Entrega:
+Sube tu código completo a una plataforma de hosting o a un repositorio en GitHub.
+Incluye comentarios en tu código para explicar la lógica detrás de las principales funciones y decisiones de implementación.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>animles amenazados por el proa de especies en extincion </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1> estos animales los podemos ver desde el proa </h1>
+      <p>
+        Proa la falda
+      </p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="busqueda">
+  <h2>Buscá un animal</h2>
+
+  <label for="search-input">Escribí el nombre del animal:</label>
+  <input
+    type="search"
+    id="search-input"
+    placeholder="Ej.: puma"
+    autocomplete="off"
+  />
+  <div class="botones-animales">
+    <button type="button" data-animal="condor andino">Cóndor andino</button>
+    <button type="button" data-animal="loro hablador">Loro hablador</button>
+    <button type="button" data-animal="puma">Puma</button>
+  </div>
+
+  <p id="mensaje-busqueda" hidden>No se encontraron animales.</p>
+</section>
+
+    <section class="intro">
+      <h2>¿Por qué es importante cuidarlos?</h2>
+      <p>
+        El Valle de Punilla forma parte de un ambiente serrano con gran biodiversidad.
+        La pérdida de bosque nativo, los incendios forestales, la urbanización y la presión humana
+        afectan a muchas especies de la región.
+        
+      </p>
+    </section>
+
+    <section class="tarjetas">
+      <article class="card">
+        <h3>Cóndor andino</h3>
+        <p>
+          Es una de las aves más emblemáticas de Córdoba. Necesita grandes áreas naturales
+          y ambientes bien conservados para sobrevivir.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Loro hablador</h3>
+        <p>
+          Es una especie muy llamativa y sensible a la pérdida de hábitat y al tráfico de fauna.
+          Su conservación depende de proteger los ambientes nativos.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Puma</h3>
+        <p>
+          Aunque todavía habita sectores serranos, sufre la fragmentación del ambiente
+          y los conflictos con actividades humanas.
+        </p>
+      </article>
+    </section>
+
+    <section class="amenazas">
+      <h2>Principales amenazas</h2>
+      <ul>
+        <li>Incendios forestales</li>
+        <li>Pérdida de bosque nativo</li>
+        <li>Crecimiento urbano desordenado</li>
+        <li>Caza y tráfico ilegal</li>
+        <li>Contaminación y alteración de cursos de agua</li>
+      </ul>
+    </section>
+
+    <section class="accion">
+      <h2>¿Qué podemos hacer?</h2>
+      <p>
+        Cuidar el monte nativo, no capturar animales silvestres, no prender fuego,
+        respetar áreas protegidas y difundir información confiable.
+      </p>
+    </section>
+  </main>
+    <script src="script.js"></script>
+  <footer>
+    <p>Proyecto escolar simple en HTML y CSS - Valle de Punilla, Córdoba</p>
+  </footer>
+</body>
+</html>

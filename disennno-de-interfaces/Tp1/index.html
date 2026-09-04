@@ -1,0 +1,40 @@
+
+
+<!--- Ejercicio 1: Cambiador de Color Interactivo 
+
+Objetivos:
+Aprender a modificar estilos y clases dinámicamente con el DOM.
+Enseñar cómo manipular estilos usando style.backgroundColor.
+ 
+Instrucciones:
+Crea una página web con un <div> cuadrado de 200x200px con color de fondo gris.
+Agrega tres botones: "Rojo", "Verde", "Azul".
+Al hacer clic en cada botón, el color del cuadrado debe cambiar al color correspondiente.--->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color</title>
+</head>
+<header>
+    <h1>Cambiador de Color Interactivo</h1>
+</header>
+<body>
+    <main>
+    <div id="cuadro" style="width: 200px; height: 200px; background-color: gray;"></div>
+    <button onclick="cambiarColor('red')">Rojo</button>
+    <button onclick="cambiarColor('green')">Verde</button>
+    <button onclick="cambiarColor('blue')">Azul</button>
+
+        
+    </main>
+    <footer>
+        <p>Ejercicio 1: Cambiador de Color Interactivo</p>
+
+    </footer>
+    
+    <script src="script.js"></script>
+        
+</body>
+</html>
